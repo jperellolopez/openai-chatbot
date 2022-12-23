@@ -100,7 +100,7 @@ const handleSubmit = async (e) => {
     typeText(messageDiv, parsedData)
   } else {
     const err = await response.text()
-    messageDiv.innerHTML = "Ha habido un error"
+    messageDiv.innerHTML = "Ha ocurrido un error, no se puede procesar el texto introducido"
     alert(err)
   }
 
